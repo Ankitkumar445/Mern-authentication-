@@ -13,7 +13,7 @@ connectDB();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ credentials: true, origin: 'http://localhost:5173' }));
+app.use(cors({ credentials: true, origin: process.env.FRONTEND_URL }));
 
 
 app.get('/', (req, res) => res.send("Working ho"));
