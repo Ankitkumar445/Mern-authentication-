@@ -13,7 +13,7 @@ connectDB();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ credentials: true, origin: process.env.FRONTEND_URL }));
+app.use(cors({ credentials: true, origin: "https://mern-authentication-frontend-dhq6.onrender.com" }));
 
 
 app.get('/', (req, res) => res.send("Working ho"));
